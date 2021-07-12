@@ -12,6 +12,16 @@ res.writeHead(200, {'Content-Type': 'text/html'});
 });
 });
 
+app.get('/contact', (req,res) => {
+fs.readFile('./contact-me.html', function(err, data) {
+res.writeHead(200, {'Content-Type': 'text/html'});
+  res.write(data);
+  return res.end();
+});
+});
+
+
+
 app.listen(port, () => {
 console.log("App is listening on port 8080!")
 });

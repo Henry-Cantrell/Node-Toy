@@ -20,8 +20,6 @@ res.writeHead(200, {'Content-Type': 'text/html'});
 });
 });
 
-
-
 app.listen(port, () => {
 console.log("App is listening on port 8080!")
 });
